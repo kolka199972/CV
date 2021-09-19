@@ -3,81 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>My profile</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <table cellspacing="15">
-    <tr>
-      <td>
-        <img src="avatarka.jpg" width="150px" alt="This is my photo">
-      </td>
-      <td>
+  <div class="container">
+    <div class="info">
+      <img id="avatarka" src="avatarka.jpg" alt="This is my photo"> 
+      <div class="info-text">
         <h1>Vabischevich Mikalai</h1>
-        <p><em>I am <strong>Frontend developer</strong></em></p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h2>My Social networks</h2>
-  <ul type="circle">
-    <li><a target="_blank" href="https://vk.com/kolia199973">VK</a></li>
-    <li><a target="_blank" href="https://www.instagram.com/nikolay72v/">Instagram</a></li>
-    <li><a target="_blank" href="https://t.me/nikolay72v">Telegram</a></li>
-  </ul>
+        <p>I am <strong>Frontend developer</strong></p>
+        <h4>My Social networks</h4>
+        <a target="_blank" href="https://vk.com/kolia199973">VK</a>
+        |
+        <a target="_blank" href="https://www.instagram.com/nikolay72v/">Instagram</a>
+        |
+        <a target="_blank" href="https://t.me/nikolay72v">Telegram</a>
+      </div>
+    </div>
 
-  <hr>
+    <div class="card bg-yellow">
+      <h2>My hobby</h2>
+      <ol class="list">
+        <li>IT</li>
+        <li>Sport</li>
+        <li>Reading</li>
+      </ol>
+    </div>
 
-  <h2>My hobby</h2>
-  <ol type="1">
-    <li>IT</li>
-    <li>Sport</li>
-    <li>Reading</li>
-  </ol>
+    <div class="card bg-green">
+      <h2>Experience:</h2>
+      <table class="table">
+        <tr>
+          <th>Job</th>
+          <th>Post</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Student</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </div>
 
-  <hr>
+    <div class="card bg-red">
+      <h2>My projects</h2>
+      <h2><a class="github" href="https://github.com/kolka199972" target="_blank">-------------------->GitHub<--------------------</a></h2>
+    </div>
 
-  <h2>Experience:</h2>
-  <table border="2">
-    <tr>
-      <th>Job</th>
-      <th>Post</th>
-      <th>Year</th>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>Student</td>
-      <td>2021</td>
-    </tr>
-    <tr>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-  </table>
+    
+    <div class="contact">
+      <h2>Communication with me</h2>
+      <form action="/">
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input id="name" placeholder="Name...." type="text">
+          </div>
 
-  <hr>
+          <div class="form-group">
+            <label for="email">Your email:</label>
+            <input id="email" placeholder="Email...." type="email">
+          </div>
+        </div>
 
-  <h2>My projects</h2>
-  <a href="github.html">GitHub--></a>
+        <div class="form-group">
+          <label for="text">Your message:</label>
+          <textarea name="" id="text"></textarea>
+        </div>
 
-  <hr>
+        <input class="btn" type="submit" value="Send">
+      </form>
+    </div>
+  </div>
 
-  <h2>Communication with me</h2>
-  <form action="/">
-    <label for="name">Your name:</label>
-    <input id="name" placeholder="Name...." type="text">
-    <br>
 
-    <label for="email">Your email:</label>
-    <input id="email" placeholder="Email...." type="email">
-    <br>
-
-    <label for="text">Your message:</label>
-    <br>
-    <textarea name="" id="text" cols="39" rows="10"></textarea>
-    <br>
-
-    <input type="submit" value="Send">
-  </form>
+  <div class="div" style="margin-bottom: 500px;"></div>
 </body>
 </html>
